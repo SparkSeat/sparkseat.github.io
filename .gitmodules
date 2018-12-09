@@ -1,4 +1,0 @@
-[submodule "site"]
-	path = _site
-	url = git@github.com:SparkSeat/sparkseat.github.io.git
-	branch = master
