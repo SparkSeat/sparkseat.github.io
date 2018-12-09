@@ -1,0 +1,6 @@
+title: SparkSeat
+url: "https://www.sparkseat.com"
+markdown: kramdown
+plugins:
+  - jekyll-assets
+  - bulma-sass

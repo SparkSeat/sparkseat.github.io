@@ -1,0 +1,12 @@
+$primary: #e5c900;
+$body-background-color: #f5f5f5;
+
+@import "bulma";
+
+html {
+  overflow-y: auto;
+}
+
+p + p {
+  margin-top: 1.5rem;
+}
