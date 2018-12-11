@@ -10,3 +10,51 @@ html {
 p + p {
   margin-top: 1.5rem;
 }
+
+.signatures {
+  height: 1rem;
+  vertical-align: text-bottom;
+  padding-left: 1px;
+}
+
+.logo svg polyline:last-child {
+  animation: flash 10s infinite steps(1)
+}
+
+@keyframes flash {
+  0% {
+    fill: $primary;
+  }
+
+  10% {
+    fill: darken($primary, 20%);
+  }
+
+  10.5% {
+    fill: $primary;
+  }
+
+  11% {
+    fill: darken($primary, 20%);
+  }
+
+  11.5% {
+    fill: $primary;
+  }
+
+  14% {
+    fill: darken($primary, 20%);
+  }
+
+  14.5% {
+    fill: $primary;
+  }
+
+  15% {
+    fill: darken($primary, 20%);
+  }
+
+  15.5% {
+    fill: $primary;
+  }
+}

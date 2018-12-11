@@ -7,12 +7,15 @@ layout: default
 </section>
 
 <section class="section">
-
   <div class="container">
     <div class="columns is-gapless is-centered">
       <div class="column is-half">
-        <h1 class="title has-text-centered">
-          {% asset logo.svg alt="SparkSeat Logo" %}
+        <h1 class="title logo has-text-centered">
+          {%- capture svg %}{% asset logo.svg inline %}{% endcapture -%}
+          {%- assign parts = svg | split: 'svg11.dtd">' -%}
+          <a href="https://www.sparkseat.com">
+            {{ parts[1]}}
+          </a>
         </h1>
 
         <h2 class="subtitle has-text-centered has-text-weight-bold">
@@ -52,7 +55,7 @@ layout: default
 
 <section class="hero is-primary">
   <div class="hero-body has-text-centered">
-    {% asset signatures.png %}
+    {% asset signatures.png alt="Signatures of Craig, Hayden, Lewis and Mihaela" %}
   </div>
 </section>
 
@@ -61,6 +64,7 @@ layout: default
     <br>
     &copy; 2013-2018 SparkSeat LLP &middot; Registered in Scotland, number SO304686
     <br>
-    For enquiries, please email {% asset email.png style="height: 1rem; vertical-align: text-bottom; padding-left: 1px;" %}
+    For enquiries, please email {% asset email.png class="signatures" alt="Email address, which is info at the current domain" %}
+    <br><br>
   </p>
 </section>
