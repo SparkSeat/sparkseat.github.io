@@ -21,7 +21,7 @@ git checkout gh-pages
 # vim index.html
 
 # Build
-jekyll build --destination _build
+JEKYLL_ENV=production jekyll build --destination _build
 
 # Update build files on master
 git checkout master
