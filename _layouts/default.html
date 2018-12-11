@@ -5,6 +5,9 @@
   <title>{{ site.title }}</title>
   {% asset main.css %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.refresh -%}
+  <meta http-equiv="refresh" content="{{ page.refresh }}">
+  {% endif %}
 </head>
 
 <body>
