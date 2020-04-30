@@ -62,9 +62,11 @@ layout: default
 <section class="has-text-centered">
   <p>
     <br>
-    &copy; 2013-2019 SparkSeat LLP &middot; Registered in Scotland, number SO304686
+    &copy; 2013&ndash;<span id="year">2019</span> SparkSeat LLP &middot; Registered in Scotland, number SO304686
     <br>
     For enquiries, please email {% asset email.png class="signatures" alt="Email address, which is info at the current domain" %}
     <br><br>
   </p>
 </section>
+
+<script>document.querySelector('#year').innerText = new Date().getFullYear()</script>
