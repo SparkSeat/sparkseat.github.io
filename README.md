@@ -25,7 +25,7 @@ JEKYLL_ENV=production jekyll build --destination _build
 
 # Update build files on master
 git checkout master
-rsync -rv  --delete --exclude=.git --exclude=.gitignore --exclude=_build _build/ ./
+rsync -rv  --delete --exclude=.git --exclude=.gitignore --exclude=_build --exclude .nojekyll _build/ ./
 rm -r _build
 
 # Commit and push
